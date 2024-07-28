@@ -31,13 +31,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Login(title: 'Login Page'),
+      home: const MyHomePage(title: 'Login Page'),
     );
   }
 }
 
-class Login extends StatefulWidget {
-  const Login({super.key, required this.title});
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -51,10 +51,10 @@ class Login extends StatefulWidget {
   final String title;
 
   @override
-  State<Login> createState() => _LoginState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _LoginState extends State<Login> {
+class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
